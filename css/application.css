@@ -1,0 +1,57 @@
+body {
+  box-sizing: border-box;
+}
+
+.color-buttons {
+  width: 50%;
+  margin: auto;
+}
+
+.color-buttons button {
+  width: 50px;
+  height: 50px;
+}
+
+button[name="red"] {
+  background-color: #9b0a03;
+}
+
+button[name="orange"] {
+  background-color: #ef681a;
+}
+
+button[name="yellow"] {
+  background-color: #ffc73a;
+}
+button[name="green"] {
+  background-color: #57752d;
+}
+button[name="blue"] {
+  background-color: #325f89;
+}
+button[name="purple"] {
+  background-color: #370c6b;
+}
+button[name="brown"] {
+  background-color: #49371f;
+}
+button[name="black"] {
+  background-color: #000000;
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 75%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.cell {
+  height: 20px;
+  border: 1px solid grey;
+  list-style-type: none;
+  padding: 5px;
+  margin: 1px;
+}
