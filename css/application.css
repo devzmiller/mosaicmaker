@@ -38,6 +38,9 @@ button[name="brown"] {
 button[name="black"] {
   background-color: #000000;
 }
+button[name="white"] {
+  background-color: #ffffff;
+}
 
 .cells {
   display: grid;
