@@ -26,9 +26,10 @@ $(document).ready(function() {
 
   $("button[name='save-button']").on("click", (event) => {
     html2canvas($(".cells"), {
-      onrendered: function(canvas) {
-        document.body.appendChild(canvas);
-        saveAs(canvas, "mosaic.txt");
+      onrendered: function(mosaic) {
+        document.body.appendChild(mosaic);
+        let blob = new Blob([mosaic], {type: "image/png"})
+        saveAs(blob);
       }
         // let blob = new Blob(canvas, {type: "image/png"});
 
