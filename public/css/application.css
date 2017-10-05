@@ -1,5 +1,15 @@
 body {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-indent: 25%;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .buttons {
@@ -17,6 +27,7 @@ button {
   height: 50px;
   display: inline-block;
   margin: auto;
+  font-weight: bold;
 }
 
 button[name="red"] {
