@@ -15,9 +15,14 @@ $(document).ready(function() {
   $(".color-buttons").on("click", "button", (event) => {
     currentColor = colors[$(event.target).attr("name")];
 
-    $(".cells").on("mouseover", ".cell", (event) => {
-      $(event.target).css("background-color", currentColor);
-    });
+    $(".cells").on("mousedown", () => {
+      $(".cells").on("mouseover", ".cell", (event) => {
+        $(event.target).css("background-color", currentColor);
+      });
+    }).on("mouseup", () => {
+      $(".cells").off("mouseover")
+    })
+
   });
 
   $("button[name='reset-button']").on("click", (event) => {
