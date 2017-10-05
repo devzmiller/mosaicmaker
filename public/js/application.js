@@ -24,4 +24,17 @@ $(document).ready(function() {
     $(".cell").css("background-color", colors["white"]);
   });
 
+  $("button[name='save-button']").on("click", (event) => {
+    html2canvas($(".cells"), {
+      onrendered: function(canvas) {
+        document.body.appendChild(canvas);
+        saveAs(canvas, "mosaic.txt");
+      }
+        // let blob = new Blob(canvas, {type: "image/png"});
+
+      // });
+    });
+    // on click, run ruby to screenshot the picture as an image.
+    // open up a save file dialog box and let the user save image.
+  });
 });
