@@ -11,11 +11,8 @@ gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
 gem 'rake'
-gem 'faker'
 gem 'bcrypt'
 gem 'shotgun', '~>0.9.1'
-gem 'screencap'
-gem 'sass'
 
 group :test do
   gem 'shoulda-matchers'
