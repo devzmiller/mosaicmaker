@@ -2,14 +2,21 @@ body {
   box-sizing: border-box;
 }
 
-.color-buttons {
-  width: 50%;
+.buttons {
+  display: flex;
+  width: 70%;
   margin: auto;
 }
 
-.color-buttons button {
+.color-buttons {
+  display: inline-block;
+}
+
+button {
   width: 50px;
   height: 50px;
+  display: inline-block;
+  margin: auto;
 }
 
 button[name="red"] {
@@ -44,9 +51,7 @@ button[name="white"] {
 
 .cells {
   display: grid;
-  grid-template-columns: 1config.ru
-Gemfile
-Rakefilefr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 75%;
   margin: auto;

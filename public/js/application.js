@@ -20,4 +20,8 @@ $(document).ready(function() {
     });
   });
 
+  $("button[name='reset-button']").on("click", (event) => {
+    $(".cell").css("background-color", colors["white"]);
+  });
+
 });
