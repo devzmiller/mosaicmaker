@@ -23,6 +23,9 @@ $(document).ready(function() {
       $(".cells").off("mouseover")
     })
 
+    $(".cells").on("click", ".cell", (event) => {
+      $(event.target).css("background-color", currentColor);
+    });
   });
 
   $("button[name='reset-button']").on("click", (event) => {
@@ -37,11 +40,6 @@ $(document).ready(function() {
           saveAs(blob, "mosaic.png");
         });
       }
-        // let blob = new Blob(canvas, {type: "image/png"});
-
-      // });
     });
-    // on click, run ruby to screenshot the picture as an image.
-    // open up a save file dialog box and let the user save image.
   });
 });
