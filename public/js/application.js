@@ -40,11 +40,6 @@ $(document).ready(function() {
           saveAs(blob, "mosaic.png");
         });
       }
-        // let blob = new Blob(canvas, {type: "image/png"});
-
-      // });
     });
-    // on click, run ruby to screenshot the picture as an image.
-    // open up a save file dialog box and let the user save image.
   });
 });
