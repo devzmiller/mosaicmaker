@@ -10,12 +10,23 @@ const colors = {
   white: "#ffffff"
 }
 
+class Tile {
+
+}
+
+class Mosaic {
+  constructor() {
+    this.currentColor = "rgb(255, 255, 255)";
+  }
+}
+
 $(document).ready(function() {
   let currentColor = null;
   $(".color-buttons").on("click", "button", (event) => {
     currentColor = colors[$(event.target).attr("name")];
 
-    $(".cells").on("mousedown", () => {
+    $(".cells").on("mousedown", ".cell", (event) => {
+      $(event.target).css("background-color", currentColor);
       $(".cells").on("mouseover", ".cell", (event) => {
         $(event.target).css("background-color", currentColor);
       });
