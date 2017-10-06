@@ -23,6 +23,9 @@ $(document).ready(function() {
       $(".cells").off("mouseover")
     })
 
+    $(".cells").on("click", ".cell", (event) => {
+      $(event.target).css("background-color", currentColor);
+    });
   });
 
   $("button[name='reset-button']").on("click", (event) => {
