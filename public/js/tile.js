@@ -1,4 +1,4 @@
-export class Tile {
+class Tile {
   constructor() {
     this.currentColor = "rgb(255, 255, 255)";
   }
@@ -8,3 +8,5 @@ export class Tile {
   }
 
 }
+
+window.Tile = Tile;

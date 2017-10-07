@@ -1,0 +1,26 @@
+{
+  "name": "mosaicmaker",
+  "version": "1.0.0",
+  "description": "Mosaic Maker",
+  "main": "application.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sea-golden-bears-2017/javascript-rock-paper-scissors-challenge"
+  },
+  "author": "Devin Miller",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sea-golden-bears-2017/javascript-rock-paper-scissors-challenge/issues"
+  },
+  "homepage": "https://github.com/sea-golden-bears-2017/javascript-rock-paper-scissors-challenge#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2"
+  }
+}

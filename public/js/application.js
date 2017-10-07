@@ -1,3 +1,5 @@
+/*global Tile Mosaic:true*/
+
 const colors = {
   red: "#9b0a03",
   orange: "#ef681a",
@@ -9,23 +11,6 @@ const colors = {
   black: "#000000",
   white: "#ffffff"
 }
-
-
-
-// class Mosaic {
-//   import Tile from "./tile.js";
-//
-//   constructor() {
-//     this.tiles = [];
-//   }
-//
-//   addTile() {
-//     this.tiles.push(new Tile());
-//     console.log(this.tiles);
-//   }
-// }
-
-
 
 $(document).ready(function() {
   let currentColor = null;
