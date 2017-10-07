@@ -22,4 +22,17 @@ describe User do
       end
     end
   end
+
+  describe 'authentication' do
+    let!(:user) {User.create!(name: "Georgina Crabapple", email: "crabapple@gmail.com", password: "ham")}
+    it 'returns user if user provides corrct email and password' do
+      expect(User.authenticate("crabapple@gmail.com", "ham")).to eq user
+    end
+    it 'returns nil if user provides email of nonregistered user' do
+      expect(User.authenticate("walrus@cat.com", "ham")).to be nil
+    end
+    it 'returns nil if email and password do not match' do
+      expect(User.authenticate("crabapple@gmail.com", "llamas")).to be nil
+    end
+  end
 end
