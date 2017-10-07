@@ -14,7 +14,7 @@ describe User do
         expect(user).to_not be_valid
       end
       it 'does not have a password_hash' do
-        user.password = nil
+        user.password_hash = nil
         expect(user).to_not be_valid
       end
       it 'has a password_hash that is not encrypted' do
