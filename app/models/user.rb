@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :name, :email, :password_hash, presence: true
   validates :email, uniqueness: true
+  has_many :mosaics
 
   def password
     @passowrd ||= BCrypt::Password.new(password_hash)
