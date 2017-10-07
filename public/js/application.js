@@ -10,15 +10,22 @@ const colors = {
   white: "#ffffff"
 }
 
-class Tile {
 
-}
 
-class Mosaic {
-  constructor() {
-    this.currentColor = "rgb(255, 255, 255)";
-  }
-}
+// class Mosaic {
+//   import Tile from "./tile.js";
+//
+//   constructor() {
+//     this.tiles = [];
+//   }
+//
+//   addTile() {
+//     this.tiles.push(new Tile());
+//     console.log(this.tiles);
+//   }
+// }
+
+
 
 $(document).ready(function() {
   let currentColor = null;
