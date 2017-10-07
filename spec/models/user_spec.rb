@@ -35,4 +35,12 @@ describe User do
       expect(User.authenticate("crabapple@gmail.com", "llamas")).to be nil
     end
   end
+
+  describe 'associations' do
+    let!(:user) {User.create!(name: "Georgina Crabapple", email: "crabapple@gmail.com", password: "ham")}
+    let!(:mosaic) {Mosaic.create!(name: "Cats", user: user)}
+    it 'has a mosaic' do
+      expect(user.mosaics).to include mosaic
+    end
+  end
 end
