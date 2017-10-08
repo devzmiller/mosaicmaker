@@ -9,7 +9,15 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  text-align: center;
+  display: inline-block;
+  float: left;
+}
+
+#create-user-link {
+  font-size: 1.2em;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
 }
 
 .buttons {
