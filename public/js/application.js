@@ -11,6 +11,16 @@ const colors = {
 }
 
 $(document).ready(function() {
+  $("#create-user-link").on("click", (event) => {
+    event.preventDefault();
+    const url = "/users/new"
+    $.ajax({
+      url
+    }).done((response) => {
+      $("#create-user-link").replaceWith(response);
+    });
+  });
+
   let currentColor = null;
   $(".color-buttons").on("click", "button", (event) => {
     currentColor = colors[$(event.target).attr("name")];
@@ -42,4 +52,5 @@ $(document).ready(function() {
       }
     });
   });
+
 });

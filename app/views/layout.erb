@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mosaic Maker</title>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/application.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -11,9 +12,11 @@
     <script type="text/javascript" src="/js/application.js"></script>
   </head>
   <body>
-    <h1>Mosaic Maker</h1>
+    <div class="menu-wrapper">
+      <h1>Mosaic Maker</h1>
+      <a id="create-user-link" href="/users/new">Create an Account</a>
+    </div>
     <h2>Choose a color. Click and drag to paint the tiles.</h2>
-    <a id="create-user-link" href="/users/new">Create an Account</a>
     <%= yield %>
   </body>
 </html>

@@ -4,7 +4,8 @@ body {
 }
 
 h1 {
-  text-indent: 25%;
+  display: inline-block;
+  color: white;
 }
 
 h2 {
@@ -13,11 +14,29 @@ h2 {
   float: left;
 }
 
+.menu-wrapper {
+  background-color: #325f89;
+  padding: 20px;
+  max-width: 100%;
+}
+
 #create-user-link {
   font-size: 1.2em;
+  text-decoration: none;
+  color: white;
   display: inline-block;
   float: right;
-  text-decoration: none;
+  margin-right: 20px;
+}
+
+.new-user-div {
+  color: white;
+  float: right;
+  display: inline-block;
+}
+
+input[type=submit] {
+  color: black;
 }
 
 .buttons {
