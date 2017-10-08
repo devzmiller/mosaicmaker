@@ -21,6 +21,18 @@ $(document).ready(function() {
     });
   });
 
+  $(".menu-wrapper").on("submit", ".new-user", (event) => {
+    event.preventDefault();
+    const data = $(event.target).serialize();
+    $.ajax({
+      url: "/users",
+      method: "POST",
+      data
+    }).done((response) => {
+      console.log(response);
+    });
+  });
+
   let currentColor = null;
   $(".color-buttons").on("click", "button", (event) => {
     currentColor = colors[$(event.target).attr("name")];
