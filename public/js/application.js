@@ -40,8 +40,25 @@ $(document).ready(function() {
       url
     }).done((response) => {
       $("#login-link").replaceWith(response);
-    })
-  })
+    });
+  });
+
+  $(".menu-wrapper").on("submit", ".new-session-form", (event) => {
+    event.preventDefault();
+    const data = $(event.target).serialize();
+    $.ajax({
+      url: "/sessions",
+      method: "POST",
+      data
+    }).done((response) => {
+      if (response === "Invalid username or password") {
+        $(".login-div").append(response);
+      } else {
+        $(".login-div").hide();
+        $("#create-user-link").hide();
+      };
+    });
+  });
 
   let currentColor = null;
   $(".color-buttons").on("click", "button", (event) => {
