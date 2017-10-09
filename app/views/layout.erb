@@ -14,8 +14,15 @@
   <body>
     <div class="menu-wrapper">
       <h1>Mosaic Maker</h1>
-      <a id="create-user-link" href="/users/new">Create an Account</a>
-      <a id="login-link" href="/sessions/new">Login</a>
+      <% if !session[:user_id] %>
+        <a id="create-user-link" href="/users/new">Create an Account</a>
+        <a id="login-link" href="/sessions/new">Login</a>
+      <% else %>
+        <form class="logout" action="/sessions/<%= session[:user_id] %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Logout">
+        </form>
+      <% end %>
     </div>
     <h2>Choose a color. Click and drag to paint the tiles.</h2>
     <%= yield %>

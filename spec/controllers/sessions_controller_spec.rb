@@ -17,4 +17,11 @@ describe "SessionsController" do
     end
     it 'makes a logout link visible'
   end
+
+  describe 'delete /sessions' do
+    it 'returns OK status' do
+      delete "/sessions/1", {}, "rack.session" => {user_id: "#{user.id}"}
+      expect(last_response).to be_ok
+    end
+  end
 end

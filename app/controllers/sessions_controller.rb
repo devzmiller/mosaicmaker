@@ -11,3 +11,7 @@ post '/sessions' do
     "Invalid username or password"
   end
 end
+
+delete '/sessions/:id' do
+  session.clear
+end
