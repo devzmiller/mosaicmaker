@@ -20,16 +20,17 @@ h2 {
   max-width: 100%;
 }
 
-#create-user-link {
+#create-user-link, #login-link {
   font-size: 1.2em;
   text-decoration: none;
   color: white;
   display: inline-block;
   float: right;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
-.new-user-div {
+.new-user-div, .login-div {
   color: white;
   float: right;
   display: inline-block;

@@ -33,6 +33,16 @@ $(document).ready(function() {
     });
   });
 
+  $(".menu-wrapper").on("click", "#login-link", (event) => {
+    event.preventDefault();
+    const url = "/sessions/new"
+    $.ajax({
+      url
+    }).done((response) => {
+      $("#login-link").replaceWith(response);
+    })
+  })
+
   let currentColor = null;
   $(".color-buttons").on("click", "button", (event) => {
     currentColor = colors[$(event.target).attr("name")];
