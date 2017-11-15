@@ -62,7 +62,7 @@ button[name="white"] {
 .cells {
   display: grid;
   grid-template-columns: repeat(40, [col] 1fr);
-  grid-template-rows: repeat(40, [row] 1fr);
+  grid-template-rows: repeat(30, [row] 1fr);
   width: 75%;
   margin: auto;
   padding-top: 10px;
