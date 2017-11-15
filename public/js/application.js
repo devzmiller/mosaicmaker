@@ -39,7 +39,8 @@ $(document).ready(function() {
         mosaic.toBlob((blob) => {
           saveAs(blob, "mosaic.png");
         });
-      }
+      },
+      background: "#fff"
     });
   });
 });
